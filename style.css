@@ -3,8 +3,8 @@ body, html {
   height: 100%; }
 
 body {
-  background-color: #765EB5;
-  background-image: url(http://www.chinadaily.com.cn/life/images/attachement/jpg/site1/20121205/001ec97909631229369b2d.jpg);
+  background-color: #383838;
+  background-image: url(http://server1.decorcamp.com/images/www.mightybackgrounds.com/wp-content/uploads/2013/03/Free-Wood-Texture-48.jpg);
   background-size: 100%;
   margin: 0;
   background-attachment: fixed; }
@@ -12,7 +12,7 @@ body {
 .site-wrapper {
   width: 100%;
   height: 680px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(95, 82, 82, 0.88);
   box-sizing: border-box;
   overflow: hidden; }
 
@@ -27,26 +27,28 @@ body {
   background-attachment: fixed; }
 
 .header {
-  width: 170px;
-  padding: 10px 0 16px;
-  margin-left: 10px;
-  display: inline-block; }
+  width: 470px;
+  margin: auto;
+  padding: 10px 0 16px; }
 
 .header > img {
   padding: 10px;
   width: 100%; }
 
+.header2-container {
+  background-image: url(http://www.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg);
+  background-size: 100%; }
+
 .header2 {
-  display: inline-block;
-  vertical-align: top;
-  float: right;
-  padding: 10px; }
+  margin-bottom: 0px;
+  text-align: center; }
 
 .header2 > ul {
   list-style: none;
-  margin-right: 10px;
-  margin-top: 23px;
-  margin-right: 20px; }
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #191919;
+  padding: 20px 0px; }
 
 #highlighted {
   border: 1px solid #212121; }
@@ -59,30 +61,70 @@ body {
 .header2 > ul > li > a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   padding: 7px 25px;
   border-radius: 2px;
+  border: 1px solid #2F2F2F;
   -webkit-transition: background-color,color 300ms;
   -moz-transition: background-color,color 300ms;
   -o-transition: background-color,color 300ms;
   transition: background-color,color 300ms; }
 
 .header2 > ul > li > a:hover {
-  color: #212121;
-  background-color: rgba(45, 45, 45, 0.43); }
+  color: #8B8CB5;
+  background-color: rgba(255, 255, 255, 0.13); }
 
 .circle-container {
-  margin-top: 100px;
+  margin-top: 0px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   background-image: url(http://www.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg);
-  background-size: 100%;
-  background-attachment: fixed; }
+  background-size: 100%; }
 
 .circle-container-inner {
-  background-color: rgba(25, 24, 23, 0.87);
   height: 210px; }
+
+.circle-text-container {
+  display: inline-block;
+  position: relative;
+  bottom: 160px;
+  left: 50px; }
+
+.circle-header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  color: #4A4345;
+  margin-bottom: 25px; }
+
+.quote {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 200; }
+
+.youtube-link {
+  color: #F3F3F3;
+  text-decoration: none;
+  background-color: #A54C4C;
+  padding: 12px 20px;
+  border-radius: 2px;
+  margin-right: 30px;
+  -webkit-box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  font-family: 'Oswald', sans-serif; }
+
+.bandcamp-link {
+  color: #F3F3F3;
+  text-decoration: none;
+  background-color: #538C94;
+  padding: 12px 20px;
+  border-radius: 2px;
+  margin-right: 30px;
+  -webkit-box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
+  font-family: 'Oswald', sans-serif; }
 
 .center {
   width: 300px;
@@ -95,7 +137,8 @@ body {
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   cursor: pointer;
   position: relative;
-  bottom: 52px; }
+  bottom: 52px;
+  display: inline-block; }
 
 .center > img {
   width: 500px;
@@ -142,23 +185,5 @@ body {
   background-color: rgba(224, 224, 224, 0.97);
   padding: 120px 100px;
   font-size: 33px; }
-
-/*body::-webkit-scrollbar  {
-    width: 12px;
-    background-color: transparent;
-    color: transparent;
-}
- 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9); 
-    border-radius: 10px;
-    
-}
- 
-body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    background-color: #141414;
-}*/
 
 /*# sourceMappingURL=style.css.map */
