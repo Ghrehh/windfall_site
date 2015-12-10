@@ -6,7 +6,8 @@ body {
   background-color: #383838;
   background-image: url(http://server1.decorcamp.com/images/www.mightybackgrounds.com/wp-content/uploads/2013/03/Free-Wood-Texture-48.jpg);
   background-size: 100%;
-  margin: 0; }
+  margin: 0;
+  background-attachment: fixed; }
 
 .site-wrapper {
   width: 100%;
@@ -63,7 +64,7 @@ body {
   font-size: 30px;
   padding: 8.75px 31.25px;
   border-radius: 2px;
-  border: 1px solid #2F2F2F;
+  border: 1px dashed #2F2F2F;
   -webkit-transition: background-color,color 300ms;
   -moz-transition: background-color,color 300ms;
   -o-transition: background-color,color 300ms;
