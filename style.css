@@ -51,9 +51,6 @@ body {
   background-color: rgba(78, 78, 78, 0.57);
   padding: 25px 0px; }
 
-#highlighted {
-  border: 1px solid #4A4345; }
-
 .navigation > ul > li {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
@@ -72,7 +69,6 @@ body {
   transition: background-color,color 300ms; }
 
 .navigation > ul > li > a:hover {
-  color: #8B8CB5;
   background-color: rgba(255, 255, 255, 0.13); }
 
 .circle-container {
@@ -160,6 +156,11 @@ body {
   font-style: italic;
   text-align: center; }
 
+.text-container, .text-container-2 {
+  background-image: url(http://www.texturemate.com/image/view/1481/_original);
+  background-size: 200%;
+  width: 100%; }
+
 .text-container > p {
   font-family: 'Roboto', sans-serif;
   color: #F4EDED;
@@ -167,12 +168,13 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
-  background-color: rgba(24, 23, 23, 0.99);
+  background-color: rgba(24, 23, 23, 0.85);
   padding: 30px 100px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  width: 45%; }
+  width: 100%;
+  box-sizing: border-box; }
 
 .text-container-2 > p {
   font-family: 'Roboto', sans-serif;
@@ -181,12 +183,12 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
-  background-color: rgba(24, 23, 23, 0.99);
+  background-color: rgba(24, 23, 23, 0.85);
   padding: 30px 100px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  width: 45%; }
+  width: 100%; }
 
 .title-container {
   background-image: url(http://www.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg);
@@ -204,5 +206,28 @@ body {
   line-height: 32px;
   padding: 80px 20px;
   font-size: 53px; }
+
+.band-container {
+  display: inline-block;
+  margin: auto;
+  background-image: url(http://www.texturemate.com/image/view/1481/_original);
+  background-size: 200%; }
+
+.band-inner {
+  background-color: rgba(24, 23, 23, 0.85);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.person {
+  display: inline-block;
+  width: 160px;
+  box-sizing: border-box;
+  margin: 16px;
+  height: 160px;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
