@@ -22,6 +22,9 @@ body {
   background-color: rgba(95, 82, 82, 0.88);
   box-sizing: border-box;
   overflow:hidden;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
 }
 
 
@@ -34,6 +37,7 @@ body {
   background-image: url(./assets/windfall.jpg);
   background-size: 100%;
   background-attachment: fixed;
+
 }
 
 .screen-2-cover {
@@ -243,7 +247,7 @@ body {
   box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
 }
 
-.title-container > h1 {
+.title-cover > h1 {
   font-family: 'Oswald', sans-serif;
   color: $nearly-black;
   margin: 0px 0px 100px;
@@ -255,27 +259,91 @@ body {
 }
 
 .band-container {
-  display:inline-block;
+  width:800px;
   margin: auto;
   background-image: url(http://www.texturemate.com/image/view/1481/_original);
   background-size: 200%;
-}
-
-.band-inner {
-  background-color: rgba(24, 23, 23, 0.85);
+  border-radius: 7px;
+  overflow:hidden;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
   box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
+}
+
+.band-inner {
+  background-color: rgba(24, 23, 23, 0.75);
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-left: 7px;
 }
 
 .person {
   display:inline-block;
   width:160px;
   box-sizing: border-box;
-  margin: 16px;
+  margin: 15px;
   height:160px;
   background-color:white;
+
+  border-radius: 100px;
+  overflow:hidden;
+  
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.83);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.83);
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.83);
+  background-position: 50% 0%;
+  background-size: 200%;
+  text-align:center;
 }
+
+.person-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.person-title-container {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+}
+
+.person-title {
+  position: relative;
+  bottom: 85px;
+  font-size: 20px;
+  background-color: #171717;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  padding: 4px 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.43);
+    right: 190px;
+    bottom: 20px;
+}
+
+.nathan {
+    background-image : url(./assets/band_photos/nafan.jpg);
+}
+
+.kacper {
+    background-image : url(./assets/band_photos/kacper.jpg);
+}
+
+.gerard {
+    background-image : url(./assets/band_photos/me.jpg);
+}
+
+.niall {
+    background-image : url(./assets/band_photos/nile.jpg);
+background-size: 100%;
+    background-position-y: 60%;
+}
+
+//background-position: 110% 110% ;
