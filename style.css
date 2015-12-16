@@ -194,7 +194,7 @@ body {
   width: 100%; }
 
 .title-container {
-  background-image: url(http://www.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg);
+  background-color: rgba(255, 255, 255, 0.91);
   background-size: 100%;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
@@ -208,21 +208,20 @@ body {
   font-weight: 800;
   line-height: 32px;
   padding: 80px 20px;
-  font-size: 53px; }
+  font-size: 63px; }
 
 .band-container {
   width: 800px;
   margin: auto;
-  background-image: url(http://www.texturemate.com/image/view/1481/_original);
   background-size: 200%;
-  border-radius: 7px;
-  overflow: hidden;
+  border-radius: 100px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43); }
 
 .band-inner {
-  background-color: rgba(24, 23, 23, 0.75);
+  background-color: rgba(35, 35, 35, 0.96);
+  border-radius: 100px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -234,15 +233,15 @@ body {
   box-sizing: border-box;
   margin: 15px;
   height: 160px;
-  background-color: white;
   border-radius: 100px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.83);
-  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.83);
-  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   background-position: 50% 0%;
   background-size: 200%;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .person-cover {
   width: 100%;
@@ -269,7 +268,8 @@ body {
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   right: 190px;
-  bottom: 20px; }
+  bottom: 20px;
+  cursor: pointer; }
 
 .nathan {
   background-image: url(./assets/band_photos/nafan.jpg); }
@@ -283,6 +283,6 @@ body {
 .niall {
   background-image: url(./assets/band_photos/nile.jpg);
   background-size: 100%;
-  background-position-y: 60%; }
+  background-position: 0% 60%; }
 
 /*# sourceMappingURL=style.css.map */
