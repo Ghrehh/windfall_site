@@ -9,6 +9,24 @@ body {
   margin: 0;
   background-attachment: fixed; }
 
+.fixed-container {
+  width: 0px;
+  height: 0px; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.16);
+  padding: 4px 5px 0px 2px;
+  margin: 0;
+  border-radius: 0 0 0 3px; }
+
+.fixed-icon {
+  width: 23px;
+  margin-left: 2px;
+  border-radius: 4px; }
+
 .screen {
   width: 100%;
   height: 850px;
@@ -25,14 +43,35 @@ body {
   background-color: black;
   box-sizing: border-box;
   overflow: hidden;
+  background-image: url(./assets/band.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45); }
+
+.screen-3-cover {
+  width: 100%;
+  height: 850px;
+  background-color: rgba(255, 255, 255, 0.22); }
+
+.screen-3 {
+  width: 100%;
+  height: 850px;
+  background-color: black;
+  box-sizing: border-box;
+  overflow: hidden;
   background-image: url(./assets/windfall.jpg);
   background-size: 100%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0, 0, 0, 0.45); }
 
 .screen-2-cover {
   width: 100%;
   height: 850px;
-  background-color: rgba(255, 255, 255, 0.22); }
+  background-color: rgba(255, 255, 255, 0.49); }
 
 .header {
   width: 587.5px;
@@ -159,42 +198,34 @@ body {
   font-style: italic;
   text-align: center; }
 
-.text-container, .text-container-2 {
+.text-container {
   background-image: url(http://www.texturemate.com/image/view/1481/_original);
+  background-attachment: fixed;
   background-size: 200%;
-  width: 100%; }
-
-.text-container > p {
-  font-family: 'Roboto', sans-serif;
-  color: #F4EDED;
-  margin: 0px 0px 30px;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 32px;
-  background-color: rgba(24, 23, 23, 0.85);
-  padding: 30px 100px;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   width: 100%;
-  box-sizing: border-box; }
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  border-top: 3px solid rgba(71, 69, 72, 0.82); }
 
-.text-container-2 > p {
+.text-container-inner {
+  background-color: rgba(24, 23, 23, 0.85); }
+
+.text-container-inner > p {
   font-family: 'Roboto', sans-serif;
   color: #F4EDED;
   margin: 0px 0px 30px;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
-  background-color: rgba(24, 23, 23, 0.85);
   padding: 30px 100px;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
-  width: 100%; }
+  width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center; }
 
 .title-container {
-  background-color: rgba(255, 255, 255, 0.91);
+  background-color: rgba(255, 255, 255, 0.99);
   background-size: 100%;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
@@ -203,7 +234,7 @@ body {
 .title-cover > h1 {
   font-family: 'Oswald', sans-serif;
   color: #4A4345;
-  margin: 0px 0px 100px;
+  margin: 0px 0px 70px;
   text-align: center;
   font-weight: 800;
   line-height: 32px;
@@ -214,14 +245,14 @@ body {
   width: 800px;
   margin: auto;
   background-size: 200%;
-  border-radius: 100px;
+  border-radius: 3px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43); }
 
 .band-inner {
   background-color: rgba(35, 35, 35, 0.96);
-  border-radius: 100px;
+  border-radius: 3px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -284,5 +315,22 @@ body {
   background-image: url(./assets/band_photos/nile.jpg);
   background-size: 100%;
   background-position: 0% 60%; }
+
+.title-container-2 {
+  background-color: rgba(255, 255, 255, 0.99);
+  background-size: 100%;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43); }
+
+.title-cover-2 > h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #4A4345;
+  margin: 0px 0px 100px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 32px;
+  padding: 80px 20px;
+  font-size: 63px; }
 
 /*# sourceMappingURL=style.css.map */
