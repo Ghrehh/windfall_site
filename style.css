@@ -19,14 +19,33 @@ body {
   top: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.16);
-  padding: 4px 5px 0px 2px;
+  padding: 4px 5px 0px 3px;
   margin: 0;
-  border-radius: 0 0 0 3px; }
+  border-radius: 0 0 0 5px; }
 
 .fixed-icon {
   width: 23px;
   margin-left: 2px;
   border-radius: 4px; }
+
+.bigger-icon-container {
+  text-align: center; }
+
+.bigger-icon-inner {
+  text-align: center;
+  margin-top: 45px;
+  background-color: rgba(37, 37, 37, 0.82);
+  padding: 20px 16px;
+  display: inline-block;
+  border-radius: 3px; }
+
+.bigger {
+  margin-left: 2px;
+  border-radius: 19px;
+  margin: 0px 5px;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43); }
 
 .screen {
   width: 100%;
@@ -333,5 +352,16 @@ body {
   line-height: 32px;
   padding: 80px 20px;
   font-size: 63px; }
+
+.footer {
+  background-color: #070707;
+  margin-top: 0; }
+
+.footer > p {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  font-size: 12px;
+  padding: 5px 10px; }
 
 /*# sourceMappingURL=style.css.map */
