@@ -16,6 +16,16 @@ body {
   background-attachment: fixed;
 }
 
+p > a {
+  color: #B38AAF !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 20px !important;
+}
+
+p > a:hover {
+  color:#A07B9D !important;
+}
+
 .fixed-container {
   width:0px;
   height:0px;
@@ -29,6 +39,10 @@ body {
   padding: 4px 5px 0px 3px;
   margin: 0;
   border-radius: 0 0 0 5px;
+}
+
+.fixed > a {
+  text-decoration: none;
 }
 
 .fixed-icon {
@@ -48,6 +62,10 @@ body {
   padding: 20px 16px;
   display: inline-block;
   border-radius: 3px;
+}
+
+.bigger-icon-inner > a {
+  text-decoration: none;
 }
 
 .bigger {
@@ -220,6 +238,10 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+.youtube-link:hover {
+  background-color:#964646;
+}
+
 .bandcamp-link {
   color: #F3F3F3;
   text-decoration: none;
@@ -231,6 +253,10 @@ body {
   -moz-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
   box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
   font-family: 'Oswald', sans-serif;
+}
+
+.bandcamp-link:hover {
+  background-color:#4B7D84;
 }
 
 .center {
@@ -302,7 +328,6 @@ body {
   box-sizing: border-box;
   text-align:center;
 }
-
 
 .title-container {
   //background-image: url(http://www.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg);
@@ -445,9 +470,20 @@ background-size: 100%;
   color: white;
   font-family: 'Oswald', sans-serif;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 12px;
   padding: 5px 10px;
+  display:inline-block;
   
 }
 
-//background-position: 110% 110% ;
+.footer > a {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  font-size: 12px;
+  padding: 5px 10px;
+  display:inline-block;
+  float:right;
+  
+}

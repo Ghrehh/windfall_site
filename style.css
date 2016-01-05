@@ -10,6 +10,14 @@ body {
   margin: 0;
   background-attachment: fixed; }
 
+p > a {
+  color: #B38AAF !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 20px !important; }
+
+p > a:hover {
+  color: #A07B9D !important; }
+
 .fixed-container {
   width: 0px;
   height: 0px; }
@@ -22,6 +30,9 @@ body {
   padding: 4px 5px 0px 3px;
   margin: 0;
   border-radius: 0 0 0 5px; }
+
+.fixed > a {
+  text-decoration: none; }
 
 .fixed-icon {
   width: 23px;
@@ -38,6 +49,9 @@ body {
   padding: 20px 16px;
   display: inline-block;
   border-radius: 3px; }
+
+.bigger-icon-inner > a {
+  text-decoration: none; }
 
 .bigger {
   margin-left: 2px;
@@ -172,6 +186,9 @@ body {
   box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
   font-family: 'Oswald', sans-serif; }
 
+.youtube-link:hover {
+  background-color: #964646; }
+
 .bandcamp-link {
   color: #F3F3F3;
   text-decoration: none;
@@ -183,6 +200,9 @@ body {
   -moz-box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
   box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.34);
   font-family: 'Oswald', sans-serif; }
+
+.bandcamp-link:hover {
+  background-color: #4B7D84; }
 
 .center {
   width: 375px;
@@ -361,7 +381,18 @@ body {
   color: white;
   font-family: 'Oswald', sans-serif;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 12px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  display: inline-block; }
+
+.footer > a {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  font-size: 12px;
+  padding: 5px 10px;
+  display: inline-block;
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
