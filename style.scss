@@ -33,7 +33,7 @@ p > a:hover {
 
 .fixed {
   position:fixed;
-  top:0;
+  top:-30px;
   right:0;
   background-color: rgba(255, 255, 255, 0.16);
   padding: 4px 5px 0px 3px;
@@ -94,10 +94,8 @@ p > a:hover {
 .screen-2 {
   width: 100%;
   height: 680px * 1.25;
-  background-color: rgba(0,0,0,1);
   box-sizing: border-box;
   overflow:hidden;
-  background-image: url(./assets/band.jpg);
   background-size: 100%;
   background-attachment: fixed;
   -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
@@ -341,7 +339,7 @@ p > a:hover {
 .title-cover > h1 {
   font-family: 'Oswald', sans-serif;
   color: $nearly-black;
-  margin: 0px 0px 70px;
+  margin: 0px 0px 0px;
   text-align:center;
   font-weight: 800;
   line-height: 32px;
@@ -434,9 +432,94 @@ p > a:hover {
 
 .niall {
     background-image : url(./assets/band_photos/nile.jpg);
-background-size: 100%;
+    background-size: 100%;
     background-position: 0% 60%;
 }
+
+///./////
+//BIO PAGES//
+///////
+
+
+.info-screen {
+  padding-top:70px;
+}
+
+.person-title-top {
+  display:none;
+}
+
+.person-container {
+  display:none;
+  width: 100%;
+  height: 680px * 1.25;
+  background-color: rgba(0,0,0,1);
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+.person-info-cover {
+  padding-top:70px;
+  width: 100%;
+  height: 680px * 1.25;
+  background-color:rgba(255, 255, 255, 0.49);
+  text-align:center;
+}
+
+.close-person {
+  color: #F3F3F3;
+  text-decoration: none;
+  background-color: #A54C4C;
+  padding: 12px * 1.25 20px * 1.25;
+  border-radius: 2px;
+  -webkit-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+  -moz-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+  box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+  font-family: 'Oswald', sans-serif;
+}
+
+.close-person:hover {
+  background-color:#964646;
+}
+
+.nathan-container {
+  background-image: url(./assets/band_photos/nathan2.JPG);
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+}
+
+.kacper-container {
+  background-image: url(./assets/band_photos/kacper2.JPG);
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+}
+
+.gerard-container {
+  background-image: url(./assets/band_photos/me2.JPG);
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+}
+
+.niall-container {
+  background-image: url(./assets/band_photos/niall2.JPG);
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+}
+
+
+
 
 //page 3
 
