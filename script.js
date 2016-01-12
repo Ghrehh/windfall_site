@@ -9,10 +9,7 @@ $(document).ready(function(){
   var not_scrolled_down = true; //keeps track of wether the top bar has animated down
   var scrolling_up = false; //stops the slideing up animation playing multiple times
   
-  var isDesktop = (function() {
-    return !('ontouchstart' in window) // works on most browsers 
-    || !('onmsgesturechange' in window); // works on ie10
-   })();
+
   
   
   $(".music-button").click(function(){
@@ -57,12 +54,13 @@ $(document).ready(function(){
   };
   
   //PARALLAX SCROLL
-  $(document).scroll(function(){
-    $("body").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 10) + "px"})
-    $(".screen-3").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 2 / 10) + "px"})
-    $(".person-container").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 1.5 / 10) + "px"})
-    
-    if (isDesktop){
+   if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
+
+    $(document).scroll(function(){
+      $("body").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 10) + "px"})
+      $(".screen-3").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 2 / 10) + "px"})
+      $(".person-container").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 1.5 / 10) + "px"})
+      
       if ($(document).scrollTop() < 804 && not_scrolled_down == false && scrolling_up == false && topPosition == 0) {
         scrolling_up = true;
         topSlideUp()
@@ -72,8 +70,8 @@ $(document).ready(function(){
         not_scrolled_down = false;
         topSlideDown()
       }
-    }
-  });
+    });
+   }
   
   
   // FOR BIO PICTURES AND CLOSING THEM
