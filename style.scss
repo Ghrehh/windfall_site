@@ -570,3 +570,285 @@ p > a:hover {
   float:right;
   
 }
+
+@media only screen 
+  and (max-device-width: 499px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+  .text-container {
+    background-image: none;
+   
+  }
+    
+  .text-container-inner > p {
+    width:100%;
+    text-align:left;
+    padding: 30px ;
+  }
+  
+  body {
+    background-image: none;
+    background-color: #514C5A;
+  }
+  
+  .circle-container {
+    
+  }
+  
+  .screen {
+    width: 100%;
+    height: 595px;
+    background-color:#3E3A44;
+    box-sizing: border-box;
+    overflow:hidden;
+    -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  }
+
+
+  .screen-2 {
+    width: 100%;
+    height: 1350px;
+    box-sizing: border-box;
+    overflow:hidden;
+    background-size: 100%;
+    background-attachment: fixed;
+    -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  
+  }
+  
+  .screen-3-cover {
+    width: 100%;
+    height: 680px * 1.25;
+    background-color:rgba(255, 255, 255, 0.22);
+  }
+  
+  
+  .screen-3 {
+    width: 100%;
+    height: 680px * 1.25;
+    background-color: rgba(0,0,0,1);
+    box-sizing: border-box;
+    overflow:hidden;
+    
+    background-image: none;
+    background-size: 100%;
+    background-attachment: fixed;
+    -webkit-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+    box-shadow: inset 0px -20px 5px -17px rgba(0,0,0,0.45);
+  
+  }
+  
+  .screen-2-cover {
+    width: 100%;
+    height: 680px * 1.25;
+    background-color:rgba(255, 255, 255, 0.16);
+  }
+  
+  
+  .header {
+    width:80%;
+    margin:auto;
+    padding: 10px * 1.25 0 16px * 1.25;
+  }
+  
+  .header > img {
+    padding: 0px;
+    width: 100%;
+  }
+
+  
+  .hamburger {
+    
+  }
+  
+  
+  .navigation {
+    margin-bottom: 0px;
+    text-align: center;
+    display:none;
+  }
+  
+  .navigation > ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: rgba(119, 118, 118, 0.57);
+    padding: 20px * 1.25 0px 0px;
+  }
+  
+  .navigation > ul > li {
+    display:inline-block;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .navigation > ul > li > a {
+    color:white;
+    text-decoration:none;
+    font-size: 24px * 1.25;
+    padding: 7px * 1.25 25px * 1.25;
+    border-radius: 2px;
+    border: 1px dashed #2F2F2F;
+    -webkit-transition: background-color,color 300ms;
+    -moz-transition: background-color,color 300ms;
+    -o-transition: background-color,color 300ms;
+    transition: background-color,color 300ms;
+  }
+  
+  .navigation > ul > li > a:hover {
+    background-color: rgba(355, 355, 355, 0.13);
+  }
+
+
+  .center {
+    display:block;
+    bottom: -28px;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .center > img {
+    width: 425px;
+    margin-top: -80px * 1.25;
+    margin-left: -80px * 1.25;
+  }
+  
+  .circle-text-container {
+    display:inline-block;
+    position: relative;
+    bottom: 160px * 1.25;
+    left: 0;
+  }
+  
+  .circle-header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 47px;
+    color: #4A4345;
+    margin-bottom: 25px * 1.25;
+    text-align: Center;
+    width: 320px;
+    line-height: 60px;
+  }
+  
+  
+  .youtube-link {
+    color: #F3F3F3;
+    text-decoration: none;
+    background-color: #A54C4C;
+    padding: 15px 13px;
+    border-radius: 2px;
+    margin-right: 2.5px;
+    margin-left: 10px;
+    -webkit-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    font-family: 'Oswald', sans-serif;
+    font-size:14px;
+  }
+  
+  .youtube-link:hover {
+    background-color:#964646;
+  }
+  
+  .bandcamp-link {
+    color: #F3F3F3;
+    text-decoration: none;
+    background-color: #538C94;
+    padding: 15px 13px;
+    border-radius: 2px * 1.25;
+    margin-right: 30px * 1.25;
+    -webkit-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    box-shadow: inset -1px -1px 5px 2px rgba(0,0,0,0.34);
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+  }
+  
+  .bandcamp-link:hover {
+    background-color:#4B7D84;
+  }
+  
+  .bigger {
+  margin-left: 2px;
+  border-radius: 6px;
+  margin: 0px 2px;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+  width: 70px !important;
+
+  }
+  
+  .bigger-icon-inner {
+    text-align: center;
+    margin-top: 45px;
+    background-color: rgba(37, 37, 37, 0.82);
+    padding: 20px 0px;
+    display: inline-block;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .title-cover > h1, .title-cover-2 > h1, .title-cover > h1 {
+    line-height: 65px;
+  }
+  
+  .band-container {
+    width: 100%;
+  }
+  
+  .band-inner {
+    padding-left: 0;
+  }
+  
+  .band-inner-center {
+    //border: 2px solid black;
+    width: 325px;
+    margin: auto;
+  }
+  
+  .person {
+      display: inline-block;
+      width: 60px;
+      box-sizing: border-box;
+      margin: 7px;
+      height: 60px;
+      border-radius: 100px;
+      overflow: hidden;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      background-position: 50% 0%;
+      background-size: 200%;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+  .person-title {
+      position: relative;
+      bottom: 85px;
+      font-size: 15px;
+      background-color: #171717;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      padding: 4px 10px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 2px;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
+      right: 80px;
+      bottom: 10px;
+      cursor: pointer;
+  }
+    
+  
+}
