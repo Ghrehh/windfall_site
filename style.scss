@@ -597,7 +597,7 @@ p > a:hover {
   
   .screen {
     width: 100%;
-    height: 595px;
+    height: 580px;
     background-color:#3E3A44;
     box-sizing: border-box;
     overflow:hidden;
@@ -623,14 +623,14 @@ p > a:hover {
   .screen-3-cover {
     width: 100%;
     height: 680px * 1.25;
-    background-color:rgba(255, 255, 255, 0.22);
+    background-color:#514C5A;
   }
   
   
   .screen-3 {
     width: 100%;
     height: 680px * 1.25;
-    background-color: rgba(0,0,0,1);
+    background-color: none;
     box-sizing: border-box;
     overflow:hidden;
     
@@ -848,6 +848,14 @@ p > a:hover {
       right: 80px;
       bottom: 10px;
       cursor: pointer;
+  }
+  
+  .person-container {
+    height:1350px;
+  }
+  
+  .person-info-cover {
+    height:1350px;
   }
     
   

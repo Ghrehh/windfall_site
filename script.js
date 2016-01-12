@@ -9,6 +9,27 @@ $(document).ready(function(){
   var not_scrolled_down = true; //keeps track of wether the top bar has animated down
   var scrolling_up = false; //stops the slideing up animation playing multiple times
   
+  var isDesktop = (function() {
+    return !('ontouchstart' in window) // works on most browsers 
+    || !('onmsgesturechange' in window); // works on ie10
+   })();
+  
+  
+  $(".music-button").click(function(){
+    $(window).scrollTop(music_anchor.top);
+  });
+  $(".info-button").click(function(){
+    $(window).scrollTop(info_anchor.top);
+  });
+  $(".gigs-button").click(function(){
+    $(window).scrollTop(gigs_anchor.top);
+  });
+  $(".contact-button").click(function(){
+    $(window).scrollTop(contact_anchor.top);
+  });
+  
+  
+  
   var topSlideDown = function() {
     if (topPosition  < 0) {
       topPosition += 1;
@@ -19,7 +40,6 @@ $(document).ready(function(){
       }, 10);
     }
   };
-  
   var topSlideUp = function() {
     if (topPosition  > -30) {
       topPosition -= 1;
@@ -36,36 +56,27 @@ $(document).ready(function(){
     }
   };
   
-  $(".music-button").click(function(){
-    $(window).scrollTop(music_anchor.top);
-  });
-  $(".info-button").click(function(){
-    $(window).scrollTop(info_anchor.top);
-  });
-  $(".gigs-button").click(function(){
-    $(window).scrollTop(gigs_anchor.top);
-  });
-  $(".contact-button").click(function(){
-    $(window).scrollTop(contact_anchor.top);
-  });
-    
-    
+  //PARALLAX SCROLL
   $(document).scroll(function(){
     $("body").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 10) + "px"})
     $(".screen-3").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 2 / 10) + "px"})
     $(".person-container").css({backgroundPosition: "0px -" + String($(document).scrollTop() / 1.5 / 10) + "px"})
     
-    if ($(document).scrollTop() < 804 && not_scrolled_down == false && scrolling_up == false && topPosition == 0) {
-      scrolling_up = true;
-      topSlideUp()
-    }
-    
-    if ($(document).scrollTop() > 804 && not_scrolled_down == true && topPosition == -30) {
-      not_scrolled_down = false;
-      topSlideDown()
+    if (isDesktop){
+      if ($(document).scrollTop() < 804 && not_scrolled_down == false && scrolling_up == false && topPosition == 0) {
+        scrolling_up = true;
+        topSlideUp()
+      }
+      
+      if ($(document).scrollTop() > 804 && not_scrolled_down == true && topPosition == -30) {
+        not_scrolled_down = false;
+        topSlideDown()
+      }
     }
   });
   
+  
+  // FOR BIO PICTURES AND CLOSING THEM
   var current_bio = "";
   var profile_selected = false;
   

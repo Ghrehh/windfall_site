@@ -475,7 +475,7 @@ p > a:hover {
 
   .screen {
     width: 100%;
-    height: 595px;
+    height: 580px;
     background-color: #3E3A44;
     box-sizing: border-box;
     overflow: hidden;
@@ -497,12 +497,12 @@ p > a:hover {
   .screen-3-cover {
     width: 100%;
     height: 850px;
-    background-color: rgba(255, 255, 255, 0.22); }
+    background-color: #514C5A; }
 
   .screen-3 {
     width: 100%;
     height: 850px;
-    background-color: black;
+    background-color: none;
     box-sizing: border-box;
     overflow: hidden;
     background-image: none;
@@ -682,6 +682,12 @@ p > a:hover {
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.43);
     right: 80px;
     bottom: 10px;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  .person-container {
+    height: 1350px; }
+
+  .person-info-cover {
+    height: 1350px; } }
 
 /*# sourceMappingURL=style.css.map */
